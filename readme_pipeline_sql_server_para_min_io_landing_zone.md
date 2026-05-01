@@ -192,6 +192,15 @@ Este projeto demonstra um pipeline básico de engenharia de dados local:
 
 ---
 
-## 📌 Autor
-Projeto de estudo em Engenharia de Dados com foco em pipelines locais e conceitos de Data Lake.
+## O CHAT È BURRO LEIA O QUE O EU ESCREVI ENQUANTO AINDA TINHA FÉ NA HUMANIDADE
 
+
+aproveitando que ainda sei o que eu fiz, voce deverá, baixar o sql server express no site da microsoft, depois baixar o SSMS, depois de ter instalado os dois (Nessa ordem) voce deve entrar no SSMS e criar o banco de dados com as tabelas, no caso voce ira usar o arquivo .BAK pra restaurar o banco igual eu deixei, descubra como fazer isso, depois de ter o banco com as tabelas criadas, voce deve baixar o arquivo .exe do MINIO (https://chatgpt.com/c/69f3e748-1048-832f-ab8e-bc983a48a1e6  , cole isso na url), apos baixar voce ja tem os 2 servidores, agora voce precisa fazer os 2 funcionarem, pra isso, no terminal CMD, Cole: sqlcmd -S .\SQLEXPRESS -E -C , depois que aparecer o >1 , cole: SELECT @@VERSION; depois GO.
+
+NOTA: O cmd que voce colocou os prompt pra ativar o SQL, apos fazer o que falei, pode fechar ele sem problemas, porem o do minio deve ficar aberto, para rodar o minio.
+
+com isso o sql esta 100 por cento, agora falta o Minio, com o mino baixado, cole isso no CMD: C:\minio\minio.exe server C:\minio-data --console-address ":9001", se der tudo certo, entre nessa url: http://localhost:9000, caso nao de troque o ultimo 0 por 1, dentro do navegador do MINIO, crie o Bucket "landing-zone", aqui voce ja fez tudo com o minio, agora saia do navegador sem fechar ele, e crie OUTRO terminal CMD, deixe o cmd do minio aberto.
+
+Apos criar outro CMD garanta que voce tem uma pasta chamada "temp" no disco C, com o arquivo "exportar_minio.py", se ja tem isso, digite no CMD: cd C:\temp , e por ultimo: python exportar_minio.py
+
+apos isso a landing zone vai ser preenchida com o CSV das tabelas, agora esta em suas mões continuar o que eu fiquei 17:30 ate as 23:10.
